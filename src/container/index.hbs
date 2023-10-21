@@ -87,9 +87,7 @@
 
   <!--    Завдання №7. Змініть колір тексту на білий та фон елемента на зелений,
   який вказаний в URL як фрагмент, коли на нього встановлюється :target -->
-
   <!--      Використовуйте цей селектор :target -->
-
   <section class='m-5 card'>
     <div class='card-header'>Завдання 7</div>
     <div class='card-body'>
@@ -174,10 +172,12 @@
               disabled
             />
           </div>
+
           <button
             type='submit'
             class='btn btn-primary'
-          >Відправити</button>
+          >Відправити
+          </button>
         </form>
       </div>
     </div>
@@ -213,7 +213,6 @@
   </section>
 
   <!--    Завдання №12. Встановіть жовтий фоновий колір для елементів <input>, що без атрибута readonly. -->
-
   <!--      Використовуйте цей селектор :read-write -->
 
   <section class='m-5 card'>
@@ -253,9 +252,8 @@
     </div>
   </section>
 
-  <!--    Завдання №14. Зробіть поле вводу зеленим, коли введене значення коректне, і червоним - якщо ні. -->
-
-  <!--      Використовуйте ці селектори :valid та :invalid   -->
+  <!-- Завдання №14. Зробіть поле вводу зеленим, коли введене значення коректне, і червоним - якщо ні. -->
+  <!-- Використовуйте ці селектори :valid та :invalid   -->
 
   <section class='m-5 card'>
     <div class='card-header'>Завдання 14</div>
@@ -312,10 +310,10 @@
             type='number'
             id='quantity'
             name='quantity'
-            min='0'
+            min='10'
+            {{!-- value='0' --}}
             max='100'
             class="bg-secondary"
-
           />
         </form>
       </div>
@@ -330,7 +328,7 @@
   <section class='m-5 card'>
     <div class='card-header'>Завдання 17</div>
     <div class='card-body '>
-      <div class='lesson-four-task-seventeen '>
+      <div class='lesson-four-task-seventeen'>
         <form>
           <label for='quantity'>Кількість:</label>
           <input
@@ -338,6 +336,7 @@
             id='quantity'
             name='quantity'
             min='0'
+            {{!-- value='5' --}}
             max='100'
             class="bg-secondary"
           />
